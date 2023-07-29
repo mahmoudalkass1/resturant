@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .masthead {
+            height: 120vh;
+            min-height: 500px;
+            background-image: url('assets/images/244416422_579384533300223_3791661215466188008_n.jpg');
+            background-size: cover;
+            background-position: right;
+            background-repeat: no-repeat;
+        }
+
+        .masthead .box {
+            background-color: rgba(255, 249, 236, 0.4);
+            /* padding: 50px 80px; */
+            padding: 100px 60px;
+            margin-top: 80px;
+        }
+
+
+        .masthead .box h1 {
+            line-height: 1.25em;
+            text-align: center;
+            font-size: 72px;
+            color: rgb(6, 39, 58);
+            max-width: 80%;
+            margin: auto;
+        }
+
+        .navbar-brand img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+
+        .masthead .box {
+            text-align: center;
+        }
+
+        .masthead .box .btn {
+            border-radius: unset;
+            transition: all 0.3s linear;
+        }
+
+        .masthead .box .btn:hover {
+            border: 1px solid #000;
+            background-color: #fff;
+            color: #000;
+        }
+
+        .about img,
+        .fav img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .parts .box .details {
+            padding: 40px 35px !important;
+        }
+
+        .parts .box .details h3 {
+            font-size: 22px;
+            font-family: jf_sb;
+        }
+
+        .parts .box .details button {
+            margin-top: 30px;
+            background-color: #059372;
+            color: #fff;
+            padding: 11px 20px;
+        }
+
+        .parts .box .details p {
+            font-size: 18px;
+        }
+
+        .parts .box .img {
+            width: 100%;
+            height: 300px;
+            background-size: cover;
+        }
+
+        .fav {
+            background-color: rgb(6, 39, 58);
+        }
+
+        .img_bg {
+            height: 250px;
+            height: 300px;
+            background-size: cover;
+            margin: 10px 0px;
+        }
+
+        .our-work .card .button a {
+            display: none;
+        }
+
+        .our-work .card:hover .button a {
+            position: absolute;
+            background-color: #000000c5;
+            top: 0;right: 0;left: 0;bottom: 0;
+            display: flex;
+            justify-content: center;
+            font-weight: bold;
+            color: #ffffff;
+            align-items: center;
+            transition: 0.3s;
+             transform: translateX(calc(100%-5px));
+            left: 0;
+
+
+        }
+
+        .our-work .card:hover::content {
+            transform: translateX(0);
+        }
+
+        .card {
+            border: none;
+
+        }
+
+        .main-title {
+            padding: 15%;
+        }
+
+        .foot {
+            display: block;
+        }
+
+        #load_more {
+            color: #06273A;
+            background-color: rgb(255, 254, 248);
+            border-color: #06273A;
+            border-width: 1px;
+            border-radius:unset;
+            padding: 10px 22px;
+            transition: all 0.4s linear;
+        }
+        #load_more:hover {
+             color:#fff !important;
+            background-color:#06273A ;
+            border-color: #06273A;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header section -->
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg  shadow fixed-top py-3" style="background-color:#fff;">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="assets/images/Logo copy (1).jpg" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">XKI ROTISSERIE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">MEZZE & CO </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Full Page Image Header with Vertically Centered Content -->
+    <header class="masthead">
+        <div class="container h-100">
+            <div class=" row h-100 align-items-center">
+                <div class="box col-6">
+                    <h1 class="text-center">Découvrez Les Délices Libanais</h1>
+                    <p class="lead text-center">Une atmosphère chic et reposante, pour tout les fin gourmets en quête
+                        d'aventure culinaire.</p>
+                    <a href="" class="btn btn-dark">Découvrir le Menu</a>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Content -->
+    <section class="py-5 about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6" style="padding-right: 0;">
+                    <img src="assets/images/244416422_579384533300223_3791661215466188008_n.jpg" alt="">
+                </div>
+                <div class="col-md-6" style="background-color: rgb( 255,238,224 );padding: 0;">
+                    <div class="text text-center w-75 m-auto" style="padding-top:20%">
+                        <h3 class="py-5" style="color:rgb(6,39,58);font-size: 40px;">Venir Chez Mezze & Co</h3>
+                        <strong class="py-5" style="color:rgb(6,39,58);font-size: 18px;"> 208 Rue Léon Gambetta - 59000
+                            Lille</strong>
+                        <p class="py-5" style="color:rgb(6,39,58);font-size: 14px;">
+                            MEZZE & CO est connu pour avoir améliorer la façon dont les gens mangent et apprécient la
+                            nourriture. Nous sommes fiers
+                            de notre capacité à faire découvrir les saveurs traditionnelle et à les partager avec la
+                            région de Lille.</h3>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="parts pad-sec">
+        <div class="container">
+            <h3 class="title_sec text-center">
+                Nos Spécialités
+            </h3>
+            <p class="text-center pb-3">Fait Maison & Cuisiné Sous vos Yeux</p>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="box" style="background-color: rgb( 6,39,58 );">
+                        <div class="img"
+                            style="background-image:url(assets/images/152819014_163562698911624_2912322312951274757_n.jpg);">
+                        </div>
+                        <img src="" alt="">
+                        <div class="details text-center text-white">
+                            <h3 class="pb-4">NOS ASSIETTES</h3>
+                            <p>Au Choix :
+                                Boeuf, Poulet, Tawouk, Mixte, Kefta, Falafel</p>
+                            <p>Servi avec : Homous, Fatouch, Frites, Amuse Bouche, Boisson</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="box" style="background-color: rgb( 149,110,70 );">
+                        <div class="img"
+                            style="background-image:url(assets/images/152819014_163562698911624_2912322312951274757_n.jpg);">
+                        </div>
+                        <img src="" alt="">
+                        <div class="details text-center text-white">
+                            <h3 class="pb-4">MENU MEZZE</h3>
+                            <p>- Fatouch, Taboulé, Homous, Caviar
+                                - 6 Pièces d’amuse bouche, Frites, Pain, Sauce</p>
+                            <p>Possibilité
+                                MENU MEZZE VEGAN</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="box" style="background-color: rgb( 255,238,224 );">
+                        <div class="img"
+                            style="background-image:url(assets/images/152819014_163562698911624_2912322312951274757_n.jpg);">
+                        </div>
+                        <img src="" alt="">
+                        <div class="details text-center" style="color:rgb(6,39,58) !important">
+                            <h3 class="pb-4">NOS ASSIETTES</h3>
+                            <p>Au Choix :
+                                Boeuf, Poulet, Tawouk, Mixte, Kefta, Falafel</p>
+                            <p>Servi avec : Homous, Fatouch, Frites, Amuse Bouche, Boisson</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- main section  -->
+    <section class="fav pad-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6" style="background-color: rgb( 255,238,224 );padding-right: 0;">
+                    <div class="text text-center w-75 m-auto" style="padding-top:20%">
+                        <h3 class="py-5" style="color:rgb(6,39,58);font-size: 40px;">Venir Chez Mezze & Co</h3>
+                        <strong class="py-5" style="color:rgb(6,39,58);font-size: 18px;"> 208 Rue Léon Gambetta - 59000
+                            Lille</strong>
+                        <p class="py-5" style="color:rgb(6,39,58);font-size: 14px;">
+                            MEZZE & CO est connu pour avoir améliorer la façon dont les gens mangent et apprécient la
+                            nourriture. Nous sommes fiers
+                            de notre capacité à faire découvrir les saveurs traditionnelle et à les partager avec la
+                            région de Lille.</h3>
+                        </p>
+                    </div>
+
+                </div>
+                <div class="col-md-6" style="padding-left:0">
+                    <img src="assets/images/244416422_579384533300223_3791661215466188008_n.jpg" alt="">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <div class="our-work text-center pb-5 pt-5">
+        <div class="container">
+            <div class="main-title mt-5 mb-5 text-center">
+                <div class="all row">
+                    <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                        <div class="card">
+                            <div class="button">
+                                <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un thé
+                                    parfait pour se réchauffer en ce début d’automne plutôt froid à Lille ☕️🍂🍁🍂</a>
+                            </div>
+                            <div style=" background-image: url(assets/images/WhatsApp\ Image\ 2023-07-27\ at\ 2.01.10\ PM.jpeg );"
+                                class="card-img-top img_bg" alt="..."></div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                        <div class="card" data-work="Application">
+                            <div class="button">
+                                <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un thé
+                                    parfait pour se réchauffer en ce début d’automne plutôt froid à Lille ☕️🍂🍁🍂</a>
+                            </div>
+                            <div style=" background-image: url(assets/images/WhatsApp\ Image\ 2023-07-27\ at\ 2.01.10\ PM\ \(1\).jpeg);"
+                                class="card-img-top img_bg" alt="..."></div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                        <div class="card" data-work="Application">
+                            <div class="button">
+                                <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un thé
+                                    parfait pour se réchauffer en ce début d’automne plutôt froid à Lille ☕️🍂🍁🍂</a>
+                            </div>
+                            <div style=" background-image: url(assets/images/WhatsApp\ Image\ 2023-07-27\ at\ 2.01.10\ PM\ \(2\).jpeg );"
+                                class="card-img-top img_bg" alt="..."></div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                        <div class="card" data-work="Application">
+                            <div class="button">
+                                <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un thé
+                                    parfait pour se réchauffer en ce début d’automne plutôt froid à Lille ☕️🍂🍁🍂</a>
+                            </div>
+                            <div style="  background-image: url(assets/images/WhatsApp\ Image\ 2023-07-27\ at\ 2.01.10\ PM\ \(3\).jpeg );"
+                                class="card-img-top img_bg" alt="..."></div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                        <div class="card" data-work="Application">
+                            <div class="button">
+                                <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un thé
+                                    parfait pour se réchauffer en ce début d’automne plutôt froid à Lille ☕️🍂🍁🍂</a>
+                            </div>
+                            <div style=" background-image: url(assets/images/WhatsApp\ Image\ 2023-07-27\ at\ 2.01.10\ PM\ \(4\).jpeg );"
+                                class="card-img-top img_bg" alt="..."></div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                        <div class="card" data-work="Application">
+                            <div class="button">
+                                <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un thé
+                                    parfait pour se réchauffer en ce début d’automne plutôt froid à Lille ☕️🍂🍁🍂</a>
+                            </div>
+                            <div style=" background-image: url(assets/images/WhatsApp\ Image\ 2023-07-27\ at\ 2.01.21\ PM\ \(2\).jpeg );"
+                                class="card-img-top img_bg" alt="..."></div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                        <div class="card" data-work="Application">
+                            <div class="button">
+                                <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un thé
+                                    parfait pour se réchauffer en ce début d’automne plutôt froid à Lille ☕️🍂🍁🍂</a>
+                            </div>
+                            <div style=" background-image: url(assets/images/WhatsApp\ Image\ 2023-07-27\ at\ 2.01.21\ PM\ \(2\).jpeg );"
+                                class="card-img-top img_bg" alt="..."></div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                        <div class="card" data-work="Application">
+                            <div class="button">
+                                <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un thé
+                                    parfait pour se réchauffer en ce début d’automne plutôt froid à Lille ☕️🍂🍁🍂</a>
+                            </div>
+                            <div style=" background-image: url(assets/images/WhatsApp\ Image\ 2023-07-27\ at\ 2.01.21\ PM\ \(3\).jpeg );"
+                                class="card-img-top img_bg" alt="..."></div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                        <div class="card" data-work="Application">
+                            <div class="button">
+                                <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un thé
+                                    parfait pour se réchauffer en ce début d’automne plutôt froid à Lille ☕️🍂🍁🍂</a>
+                            </div>
+                            <div style=" background-image: url(assets/images/WhatsApp\ Image\ 2023-07-27\ at\ 2.01.44\ PM.jpeg );"
+                                class="card-img-top img_bg" alt="..."></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="all row" id="second_item" style="display: none;">
+                    <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                        <div class="card">
+                            <div class="button">
+                                <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un thé
+                                    parfait pour se réchauffer en ce début d’automne plutôt froid à Lille ☕️🍂🍁🍂</a>
+                            </div>
+                            <div style=" background-image: url(assets/images/WhatsApp\ Image\ 2023-07-27\ at\ 2.01.10\ PM.jpeg );"
+                                class="card-img-top img_bg" alt="..."></div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                        <div class="card" data-work="Application">
+                            <div class="button">
+                                <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un thé
+                                    parfait pour se réchauffer en ce début d’automne plutôt froid à Lille ☕️🍂🍁🍂</a>
+                            </div>
+                            <div style=" background-image: url(assets/images/WhatsApp\ Image\ 2023-07-27\ at\ 2.01.10\ PM\ \(1\).jpeg);"
+                                class="card-img-top img_bg" alt="..."></div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                        <div class="card" data-work="Application">
+                            <div class="button">
+                                <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un thé
+                                    parfait pour se réchauffer en ce début d’automne plutôt froid à Lille ☕️🍂🍁🍂</a>
+                            </div>
+                            <div style=" background-image: url(assets/images/WhatsApp\ Image\ 2023-07-27\ at\ 2.01.10\ PM\ \(2\).jpeg );"
+                                class="card-img-top img_bg" alt="..."></div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                        <div class="card" data-work="Application">
+                            <div class="button">
+                                <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un thé
+                                    parfait pour se réchauffer en ce début d’automne plutôt froid à Lille ☕️🍂🍁🍂</a>
+                            </div>
+                            <div style="  background-image: url(assets/images/WhatsApp\ Image\ 2023-07-27\ at\ 2.01.10\ PM\ \(3\).jpeg );"
+                                class="card-img-top img_bg" alt="..."></div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                        <div class="card" data-work="Application">
+                            <div class="button">
+                                <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un thé
+                                    parfait pour se réchauffer en ce début d’automne plutôt froid à Lille ☕️🍂🍁🍂</a>
+                            </div>
+                            <div style=" background-image: url(assets/images/WhatsApp\ Image\ 2023-07-27\ at\ 2.01.10\ PM\ \(4\).jpeg );"
+                                class="card-img-top img_bg" alt="..."></div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                        <div class="card" data-work="Application">
+                            <div class="button">
+                                <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un thé
+                                    parfait pour se réchauffer en ce début d’automne plutôt froid à Lille ☕️🍂🍁🍂</a>
+                            </div>
+                            <div style=" background-image: url(assets/images/WhatsApp\ Image\ 2023-07-27\ at\ 2.01.21\ PM\ \(2\).jpeg );"
+                                class="card-img-top img_bg" alt="..."></div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                        <div class="card" data-work="Application">
+                            <div class="button">
+                                <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un thé
+                                    parfait pour se réchauffer en ce début d’automne plutôt froid à Lille ☕️🍂🍁🍂</a>
+                            </div>
+                            <div style=" background-image: url(assets/images/WhatsApp\ Image\ 2023-07-27\ at\ 2.01.21\ PM\ \(2\).jpeg );"
+                                class="card-img-top img_bg" alt="..."></div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                        <div class="card" data-work="Application">
+                            <div class="button">
+                                <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un thé
+                                    parfait pour se réchauffer en ce début d’automne plutôt froid à Lille ☕️🍂🍁🍂</a>
+                            </div>
+                            <div style=" background-image: url(assets/images/WhatsApp\ Image\ 2023-07-27\ at\ 2.01.21\ PM\ \(3\).jpeg );"
+                                class="card-img-top img_bg" alt="..."></div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                        <div class="card" data-work="Application">
+                            <div class="button">
+                                <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un thé
+                                    parfait pour se réchauffer en ce début d’automne plutôt froid à Lille ☕️🍂🍁🍂</a>
+                            </div>
+                            <div style=" background-image: url(assets/images/WhatsApp\ Image\ 2023-07-27\ at\ 2.01.44\ PM.jpeg );"
+                                class="card-img-top img_bg" alt="..."></div>
+                        </div>
+                    </div>
+                </div>
+
+                <a id="load_more" class="btn m mt-5 "  href="#">Red More</a>
+
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="text-center">
+            <span class="foot">09 80 66 33 66</span>
+            <span class="foot">208 Rue Léon Gambetta, 59000 Lille, France</span>
+            <div class="foot pt-3 pb-5"> &copy;2021 by MEZZE & CO</div>
+
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#load_more').click(function (e) {
+                e.preventDefault();
+                $('#second_item').css('display', 'flex');
+                $(this).css('display', 'none');
+            });
+        });
+    </script>
+</body>
+
+</html>
