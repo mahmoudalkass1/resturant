@@ -105,14 +105,17 @@
         .our-work .card:hover .button a {
             position: absolute;
             background-color: #000000c5;
-            top: 0;right: 0;left: 0;bottom: 0;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
             display: flex;
             justify-content: center;
             font-weight: bold;
             color: #ffffff;
             align-items: center;
             transition: 0.3s;
-             transform: translateX(calc(100%-5px));
+            transform: translateX(calc(100%-5px));
             left: 0;
 
 
@@ -140,14 +143,20 @@
             background-color: rgb(255, 254, 248);
             border-color: #06273A;
             border-width: 1px;
-            border-radius:unset;
+            border-radius: unset;
             padding: 10px 22px;
             transition: all 0.4s linear;
         }
+
         #load_more:hover {
-             color:#fff !important;
-            background-color:#06273A ;
+            color: #fff !important;
+            background-color: #06273A;
             border-color: #06273A;
+        }
+
+        #navbarResponsive .nav-link.active {
+            background: transparent !important;
+            color: #059372;
         }
     </style>
 </head>
@@ -163,14 +172,19 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">XKI ROTISSERIE</a>
+                <ul class="nav nav-pills navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-bs-toggle="tab" href="#mezze">MEZZE & CO </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">MEZZE & CO </a>
+                        <a class="nav-link " data-bs-toggle="tab" href="#sandwichs">sandwichs</a>
                     </li>
-                    
+                    <li class="nav-item">
+                        <a class="nav-link " data-bs-toggle="tab" href="#sucreries">des sucreries</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " data-bs-toggle="tab" href="#PENSIONS">le PENSIONS</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -196,7 +210,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6" style="padding-right: 0;">
-                    <img src="assets/images/244416422_579384533300223_3791661215466188008_n.jpg" alt="">
+                    <img src="assets/images/SesamPhotos/unnamed.jpg" alt="">
                 </div>
                 <div class="col-md-6" style="background-color: rgb( 255,238,224 );padding: 0;">
                     <div class="text text-center w-75 m-auto" style="padding-top:20%">
@@ -226,7 +240,7 @@
                 <div class="col-lg-4">
                     <div class="box" style="background-color: rgb( 6,39,58 );">
                         <div class="img"
-                            style="background-image:url(assets/images/152819014_163562698911624_2912322312951274757_n.jpg);">
+                            style="background-image:url(assets/images/1cc88d_bc718d70526742179e11064703c985e7~mv2.webp);">
                         </div>
                         <img src="" alt="">
                         <div class="details text-center text-white">
@@ -240,14 +254,14 @@
                 <div class="col-lg-4">
                     <div class="box" style="background-color: rgb( 149,110,70 );">
                         <div class="img"
-                            style="background-image:url(assets/images/152819014_163562698911624_2912322312951274757_n.jpg);">
+                            style="background-image:url(assets/images/SesamPhotos/mezze/Assiette\ Falafel\ .jpg);">
                         </div>
                         <img src="" alt="">
                         <div class="details text-center text-white">
                             <h3 class="pb-4">MENU MEZZE</h3>
                             <p>- Fatouch, Taboulé, Homous, Caviar
                                 - 6 Pièces d’amuse bouche, Frites, Pain, Sauce</p>
-                            <p>Possibilité
+                            <p>Possibilité <br>
                                 MENU MEZZE VEGAN</p>
                         </div>
                     </div>
@@ -255,11 +269,11 @@
                 <div class="col-lg-4">
                     <div class="box" style="background-color: rgb( 255,238,224 );">
                         <div class="img"
-                            style="background-image:url(assets/images/152819014_163562698911624_2912322312951274757_n.jpg);">
+                            style="background-image:url(assets/images/SesamPhotos/sandwish/9fa4ec8d-f57e-439a-8760-50f1a9ad6a7e.jpg);">
                         </div>
                         <img src="" alt="">
                         <div class="details text-center" style="color:rgb(6,39,58) !important">
-                            <h3 class="pb-4">NOS ASSIETTES</h3>
+                            <h3 class="pb-4">MENUS SANDWICHS</h3>
                             <p>Au Choix :
                                 Boeuf, Poulet, Tawouk, Mixte, Kefta, Falafel</p>
                             <p>Servi avec : Homous, Fatouch, Frites, Amuse Bouche, Boisson</p>
@@ -287,219 +301,707 @@
 
                 </div>
                 <div class="col-md-6" style="padding-left:0">
-                    <img src="assets/images/244416422_579384533300223_3791661215466188008_n.jpg" alt="">
+                    <img src="assets/images/SesamPhotos/AdobeStock_476671199_Preview.jpeg" alt="">
                 </div>
 
             </div>
         </div>
     </section>
-    <div class="our-work text-center pb-5 pt-5">
+    <div id="food" class="our-work text-center pb-5 pt-5">
         <div class="container">
-            <div class="main-title mt-5 mb-5 text-center">
-                <div class="all row">
-                    <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
-                        <div class="card">
-                            <div class="button">
-                                <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un thé
-                                    parfait pour se réchauffer en ce début d’automne plutôt froid à Lille ☕️🍂🍁🍂</a>
+            <div class="tab-content main-title mt-5 mb-5 text-center">
+                <div class="tab-pane active" id="mezze">
+                    <div class="all row">
+                        <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                            <div class="card">
+                                <div class="button">
+                                    <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un
+                                        thé
+                                        parfait pour se réchauffer en ce début d’automne plutôt froid à Lille
+                                        ☕️🍂🍁🍂</a>
+                                </div>
+                                <div style=" background-image: url(assets/images/SesamPhotos/mezze/8a30f7d3-5282-4cbd-ac02-4e8b687d2865.jpg);"
+                                    class="card-img-top img_bg" alt="..."></div>
                             </div>
-                            <div style=" background-image: url(assets/images/WhatsApp\ Image\ 2023-07-27\ at\ 2.01.10\ PM.jpeg );"
-                                class="card-img-top img_bg" alt="..."></div>
+                        </div>
+
+                        <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                            <div class="card" data-work="Application">
+                                <div class="button">
+                                    <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un
+                                        thé
+                                        parfait pour se réchauffer en ce début d’automne plutôt froid à Lille
+                                        ☕️🍂🍁🍂</a>
+                                </div>
+                                <div style=" background-image: url(assets/images/SesamPhotos/mezze/96bf9290b2fe7edbc688.jpg);"
+                                    class="card-img-top img_bg" alt="..."></div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                            <div class="card" data-work="Application">
+                                <div class="button">
+                                    <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un
+                                        thé
+                                        parfait pour se réchauffer en ce début d’automne plutôt froid à Lille
+                                        ☕️🍂🍁🍂</a>
+                                </div>
+                                <div style=" background-image: url(assets/images/SesamPhotos/mezze/a-labneh-sandwich-with-all-the-veggies-and-oliv-8-6-2018-2-22-55-pm-l.jpg);"
+                                    class="card-img-top img_bg" alt="..."></div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                            <div class="card" data-work="Application">
+                                <div class="button">
+                                    <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un
+                                        thé
+                                        parfait pour se réchauffer en ce début d’automne plutôt froid à Lille
+                                        ☕️🍂🍁🍂</a>
+                                </div>
+                                <div style="  background-image: url(assets/images/SesamPhotos/mezze/acd0fdaf-79bb-49c9-8444-458a2355ff1e.jpeg);"
+                                    class="card-img-top img_bg" alt="..."></div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                            <div class="card" data-work="Application">
+                                <div class="button">
+                                    <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un
+                                        thé
+                                        parfait pour se réchauffer en ce début d’automne plutôt froid à Lille
+                                        ☕️🍂🍁🍂</a>
+                                </div>
+                                <div style=" background-image: url(assets/images/SesamPhotos/mezze/AdobeStock_210299268_Preview.jpeg);"
+                                    class="card-img-top img_bg" alt="..."></div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                            <div class="card" data-work="Application">
+                                <div class="button">
+                                    <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un
+                                        thé
+                                        parfait pour se réchauffer en ce début d’automne plutôt froid à Lille
+                                        ☕️🍂🍁🍂</a>
+                                </div>
+                                <div style=" background-image: url(assets/images/SesamPhotos/mezze/Assiette\ Falafel\ .jpg);"
+                                    class="card-img-top img_bg" alt="..."></div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                            <div class="card" data-work="Application">
+                                <div class="button">
+                                    <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un
+                                        thé
+                                        parfait pour se réchauffer en ce début d’automne plutôt froid à Lille
+                                        ☕️🍂🍁🍂</a>
+                                </div>
+                                <div style=" background-image: url(assets/images/SesamPhotos/mezze/Assortiment\ Fatayer.jpg);"
+                                    class="card-img-top img_bg" alt="..."></div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                            <div class="card" data-work="Application">
+                                <div class="button">
+                                    <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un
+                                        thé
+                                        parfait pour se réchauffer en ce début d’automne plutôt froid à Lille
+                                        ☕️🍂🍁🍂</a>
+                                </div>
+                                <div style=" background-image: url(assets/images/SesamPhotos/mezze/c47b62cd-f457-47c4-8d48-6ffe3d8d60d0.jpeg);"
+                                    class="card-img-top img_bg" alt="..."></div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                            <div class="card" data-work="Application">
+                                <div class="button">
+                                    <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un
+                                        thé
+                                        parfait pour se réchauffer en ce début d’automne plutôt froid à Lille
+                                        ☕️🍂🍁🍂</a>
+                                </div>
+                                <div style=" background-image: url(assets/images/SesamPhotos/mezze/Falafel-and-pita-sandwiches-falafels-baked.jpg);"
+                                    class="card-img-top img_bg" alt="..."></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="all row" id="second_item">
+                        <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                            <div class="card">
+                                <div class="button">
+                                    <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un
+                                        thé
+                                        parfait pour se réchauffer en ce début d’automne plutôt froid à Lille
+                                        ☕️🍂🍁🍂</a>
+                                </div>
+                                <div style=" background-image: url(assets/images/SesamPhotos/mezze/Fatouch.jpeg);"
+                                    class="card-img-top img_bg" alt="..."></div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                            <div class="card" data-work="Application">
+                                <div class="button">
+                                    <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un
+                                        thé
+                                        parfait pour se réchauffer en ce début d’automne plutôt froid à Lille
+                                        ☕️🍂🍁🍂</a>
+                                </div>
+                                <div style=" background-image: url(assets/images/SesamPhotos/mezze/Fattouche.jpeg);"
+                                    class="card-img-top img_bg" alt="..."></div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                            <div class="card" data-work="Application">
+                                <div class="button">
+                                    <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un
+                                        thé
+                                        parfait pour se réchauffer en ce début d’automne plutôt froid à Lille
+                                        ☕️🍂🍁🍂</a>
+                                </div>
+                                <div style=" background-image: url(assets/images/SesamPhotos/mezze/hummus-recipe-1-of-6.jpg);"
+                                    class="card-img-top img_bg" alt="..."></div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                            <div class="card" data-work="Application">
+                                <div class="button">
+                                    <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un
+                                        thé
+                                        parfait pour se réchauffer en ce début d’automne plutôt froid à Lille
+                                        ☕️🍂🍁🍂</a>
+                                </div>
+                                <div style="  background-image: url(assets/images/SesamPhotos/mezze/Kubbeh-k-F1.jpg);"
+                                    class="card-img-top img_bg" alt="..."></div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                            <div class="card" data-work="Application">
+                                <div class="button">
+                                    <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un
+                                        thé
+                                        parfait pour se réchauffer en ce début d’automne plutôt froid à Lille
+                                        ☕️🍂🍁🍂</a>
+                                </div>
+                                <div style=" background-image: url(assets/images/SesamPhotos/mezze/Manaich\ gehakt.png);"
+                                    class="card-img-top img_bg" alt="..."></div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                            <div class="card" data-work="Application">
+                                <div class="button">
+                                    <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un
+                                        thé
+                                        parfait pour se réchauffer en ce début d’automne plutôt froid à Lille
+                                        ☕️🍂🍁🍂</a>
+                                </div>
+                                <div style=" background-image: url(assets/images/SesamPhotos/mezze/mechoui-groningen-20011410014922.jpg.png);"
+                                    class="card-img-top img_bg" alt="..."></div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                            <div class="card" data-work="Application">
+                                <div class="button">
+                                    <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un
+                                        thé
+                                        parfait pour se réchauffer en ce début d’automne plutôt froid à Lille
+                                        ☕️🍂🍁🍂</a>
+                                </div>
+                                <div style=" background-image: url(assets/images/SesamPhotos/mezze/Taboulè.jpeg);"
+                                    class="card-img-top img_bg" alt="..."></div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                            <div class="card" data-work="Application">
+                                <div class="button">
+                                    <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un
+                                        thé
+                                        parfait pour se réchauffer en ce début d’automne plutôt froid à Lille
+                                        ☕️🍂🍁🍂</a>
+                                </div>
+                                <div style=" background-image: url(assets/images/SesamPhotos/mezze/tzatziki-4.jpg);"
+                                    class="card-img-top img_bg" alt="..."></div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                            <div class="card" data-work="Application">
+                                <div class="button">
+                                    <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un
+                                        thé
+                                        parfait pour se réchauffer en ce début d’automne plutôt froid à Lille
+                                        ☕️🍂🍁🍂</a>
+                                </div>
+                                <div style=" background-image: url(assets/images/SesamPhotos/mezze/Screenshot\ 2021-11-19\ at\ 21.15.53.png);"
+                                    class="card-img-top img_bg" alt="..."></div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
-                        <div class="card" data-work="Application">
-                            <div class="button">
-                                <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un thé
-                                    parfait pour se réchauffer en ce début d’automne plutôt froid à Lille ☕️🍂🍁🍂</a>
+                </div>
+                <div class="tab-pane" id="sandwichs">
+                    <div class="all row">
+                        <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                            <div class="card">
+                                <div class="button">
+                                    <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un
+                                        thé
+                                        parfait pour se réchauffer en ce début d’automne plutôt froid à Lille
+                                        ☕️🍂🍁🍂</a>
+                                </div>
+                                <div style=" background-image: url(assets/images/SesamPhotos/sandwish/0b8a2e84-13e4-4ab3-a306-bd3646ace288.jpg);"
+                                    class="card-img-top img_bg" alt="..."></div>
                             </div>
-                            <div style=" background-image: url(assets/images/WhatsApp\ Image\ 2023-07-27\ at\ 2.01.10\ PM\ \(1\).jpeg);"
-                                class="card-img-top img_bg" alt="..."></div>
+                        </div>
+
+                        <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                            <div class="card" data-work="Application">
+                                <div class="button">
+                                    <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un
+                                        thé
+                                        parfait pour se réchauffer en ce début d’automne plutôt froid à Lille
+                                        ☕️🍂🍁🍂</a>
+                                </div>
+                                <div style=" background-image: url(assets/images/SesamPhotos/sandwish/1bc0e1d2-ff55-11eb-a2fe-b61ec2b918d7_french_tacos_close_up.jpg);"
+                                    class="card-img-top img_bg" alt="..."></div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                            <div class="card" data-work="Application">
+                                <div class="button">
+                                    <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un
+                                        thé
+                                        parfait pour se réchauffer en ce début d’automne plutôt froid à Lille
+                                        ☕️🍂🍁🍂</a>
+                                </div>
+                                <div style=" background-image: url(assets/images/SesamPhotos/sandwish/21b16352-7d75-46c1-9340-0d1ad4ffd15c.jpeg);"
+                                    class="card-img-top img_bg" alt="..."></div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                            <div class="card" data-work="Application">
+                                <div class="button">
+                                    <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un
+                                        thé
+                                        parfait pour se réchauffer en ce début d’automne plutôt froid à Lille
+                                        ☕️🍂🍁🍂</a>
+                                </div>
+                                <div style="  background-image: url(assets/images/SesamPhotos/sandwish/3601e6b4-50a0-4432-b8a3-bf717fff2eee.jpg);"
+                                    class="card-img-top img_bg" alt="..."></div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                            <div class="card" data-work="Application">
+                                <div class="button">
+                                    <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un
+                                        thé
+                                        parfait pour se réchauffer en ce début d’automne plutôt froid à Lille
+                                        ☕️🍂🍁🍂</a>
+                                </div>
+                                <div style=" background-image: url(assets/images/SesamPhotos/sandwish/9fa4ec8d-f57e-439a-8760-50f1a9ad6a7e.jpg);"
+                                    class="card-img-top img_bg" alt="..."></div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                            <div class="card" data-work="Application">
+                                <div class="button">
+                                    <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un
+                                        thé
+                                        parfait pour se réchauffer en ce début d’automne plutôt froid à Lille
+                                        ☕️🍂🍁🍂</a>
+                                </div>
+                                <div style=" background-image: url(assets/images/SesamPhotos/sandwish/best-lebanese-restaurant-in-dubai.jpg);"
+                                    class="card-img-top img_bg" alt="..."></div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                            <div class="card" data-work="Application">
+                                <div class="button">
+                                    <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un
+                                        thé
+                                        parfait pour se réchauffer en ce début d’automne plutôt froid à Lille
+                                        ☕️🍂🍁🍂</a>
+                                </div>
+                                <div style=" background-image: url(assets/images/SesamPhotos/sandwish/ChickenShawarmaSandwich.jpg);"
+                                    class="card-img-top img_bg" alt="..."></div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                            <div class="card" data-work="Application">
+                                <div class="button">
+                                    <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un
+                                        thé
+                                        parfait pour se réchauffer en ce début d’automne plutôt froid à Lille
+                                        ☕️🍂🍁🍂</a>
+                                </div>
+                                <div style=" background-image: url(assets/images/SesamPhotos/sandwish/doner-burger-with-extra.jpg);"
+                                    class="card-img-top img_bg" alt="..."></div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                            <div class="card" data-work="Application">
+                                <div class="button">
+                                    <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un
+                                        thé
+                                        parfait pour se réchauffer en ce début d’automne plutôt froid à Lille
+                                        ☕️🍂🍁🍂</a>
+                                </div>
+                                <div style=" background-image: url(assets/images/SesamPhotos/sandwish/dsc0510.jpg);"
+                                    class="card-img-top img_bg" alt="..."></div>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
-                        <div class="card" data-work="Application">
-                            <div class="button">
-                                <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un thé
-                                    parfait pour se réchauffer en ce début d’automne plutôt froid à Lille ☕️🍂🍁🍂</a>
+                    <div class="all row" id="second_item">
+                        <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                            <div class="card">
+                                <div class="button">
+                                    <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un
+                                        thé
+                                        parfait pour se réchauffer en ce début d’automne plutôt froid à Lille
+                                        ☕️🍂🍁🍂</a>
+                                </div>
+                                <div style=" background-image: url(assets/images/SesamPhotos/sandwish/e9d8f851-77c1-4bcf-8e6e-a41f0bc87afc.jpg);"
+                                    class="card-img-top img_bg" alt="..."></div>
                             </div>
-                            <div style=" background-image: url(assets/images/WhatsApp\ Image\ 2023-07-27\ at\ 2.01.10\ PM\ \(2\).jpeg );"
-                                class="card-img-top img_bg" alt="..."></div>
                         </div>
-                    </div>
 
-                    <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
-                        <div class="card" data-work="Application">
-                            <div class="button">
-                                <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un thé
-                                    parfait pour se réchauffer en ce début d’automne plutôt froid à Lille ☕️🍂🍁🍂</a>
+                        <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                            <div class="card" data-work="Application">
+                                <div class="button">
+                                    <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un
+                                        thé
+                                        parfait pour se réchauffer en ce début d’automne plutôt froid à Lille
+                                        ☕️🍂🍁🍂</a>
+                                </div>
+                                <div style=" background-image: url(assets/images/SesamPhotos/sandwish/falafel.jpg);"
+                                    class="card-img-top img_bg" alt="..."></div>
                             </div>
-                            <div style="  background-image: url(assets/images/WhatsApp\ Image\ 2023-07-27\ at\ 2.01.10\ PM\ \(3\).jpeg );"
-                                class="card-img-top img_bg" alt="..."></div>
                         </div>
-                    </div>
 
-                    <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
-                        <div class="card" data-work="Application">
-                            <div class="button">
-                                <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un thé
-                                    parfait pour se réchauffer en ce début d’automne plutôt froid à Lille ☕️🍂🍁🍂</a>
+                        <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                            <div class="card" data-work="Application">
+                                <div class="button">
+                                    <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un
+                                        thé
+                                        parfait pour se réchauffer en ce début d’automne plutôt froid à Lille
+                                        ☕️🍂🍁🍂</a>
+                                </div>
+                                <div style=" background-image: url(assets/images/SesamPhotos/sandwish/Shawerma\ vlees.jpg);"
+                                    class="card-img-top img_bg" alt="..."></div>
                             </div>
-                            <div style=" background-image: url(assets/images/WhatsApp\ Image\ 2023-07-27\ at\ 2.01.10\ PM\ \(4\).jpeg );"
-                                class="card-img-top img_bg" alt="..."></div>
                         </div>
-                    </div>
 
-                    <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
-                        <div class="card" data-work="Application">
-                            <div class="button">
-                                <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un thé
-                                    parfait pour se réchauffer en ce début d’automne plutôt froid à Lille ☕️🍂🍁🍂</a>
+                        <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                            <div class="card" data-work="Application">
+                                <div class="button">
+                                    <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un
+                                        thé
+                                        parfait pour se réchauffer en ce début d’automne plutôt froid à Lille
+                                        ☕️🍂🍁🍂</a>
+                                </div>
+                                <div style="  background-image: url( assets/images/SesamPhotos/sandwish/Unknown.jpeg );"
+                                    class="card-img-top img_bg" alt="..."></div>
                             </div>
-                            <div style=" background-image: url(assets/images/WhatsApp\ Image\ 2023-07-27\ at\ 2.01.21\ PM\ \(2\).jpeg );"
-                                class="card-img-top img_bg" alt="..."></div>
                         </div>
-                    </div>
 
-                    <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
-                        <div class="card" data-work="Application">
-                            <div class="button">
-                                <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un thé
-                                    parfait pour se réchauffer en ce début d’automne plutôt froid à Lille ☕️🍂🍁🍂</a>
+                        <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                            <div class="card" data-work="Application">
+                                <div class="button">
+                                    <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un
+                                        thé
+                                        parfait pour se réchauffer en ce début d’automne plutôt froid à Lille
+                                        ☕️🍂🍁🍂</a>
+                                </div>
+                                <div style=" background-image: url(assets/images/SesamPhotos/sandwish/Shish\ Tawok.jpg);"
+                                    class="card-img-top img_bg" alt="..."></div>
                             </div>
-                            <div style=" background-image: url(assets/images/WhatsApp\ Image\ 2023-07-27\ at\ 2.01.21\ PM\ \(2\).jpeg );"
-                                class="card-img-top img_bg" alt="..."></div>
                         </div>
-                    </div>
 
-                    <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
-                        <div class="card" data-work="Application">
-                            <div class="button">
-                                <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un thé
-                                    parfait pour se réchauffer en ce début d’automne plutôt froid à Lille ☕️🍂🍁🍂</a>
+                        <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                            <div class="card" data-work="Application">
+                                <div class="button">
+                                    <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un
+                                        thé
+                                        parfait pour se réchauffer en ce début d’automne plutôt froid à Lille
+                                        ☕️🍂🍁🍂</a>
+                                </div>
+                                <div style=" background-image: url(assets/images/SesamPhotos/sandwish/pulled-chicken-kebab-burger-spicy-chili-pulled-chicken-kebab-burger-spicy-chili-lettuce-healthy-wholewheat-bun-121649651.jpg);"
+                                    class="card-img-top img_bg" alt="..."></div>
                             </div>
-                            <div style=" background-image: url(assets/images/WhatsApp\ Image\ 2023-07-27\ at\ 2.01.21\ PM\ \(3\).jpeg );"
-                                class="card-img-top img_bg" alt="..."></div>
                         </div>
-                    </div>
 
-                    <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
-                        <div class="card" data-work="Application">
-                            <div class="button">
-                                <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un thé
-                                    parfait pour se réchauffer en ce début d’automne plutôt froid à Lille ☕️🍂🍁🍂</a>
+                        <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                            <div class="card" data-work="Application">
+                                <div class="button">
+                                    <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un
+                                        thé
+                                        parfait pour se réchauffer en ce début d’automne plutôt froid à Lille
+                                        ☕️🍂🍁🍂</a>
+                                </div>
+                                <div style=" background-image: url(assets/images/SesamPhotos/sandwish/LABNEH-PITA-SANDWICH.jpg);"
+                                    class="card-img-top img_bg" alt="..."></div>
                             </div>
-                            <div style=" background-image: url(assets/images/WhatsApp\ Image\ 2023-07-27\ at\ 2.01.44\ PM.jpeg );"
-                                class="card-img-top img_bg" alt="..."></div>
+                        </div>
+
+                        <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                            <div class="card" data-work="Application">
+                                <div class="button">
+                                    <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un
+                                        thé
+                                        parfait pour se réchauffer en ce début d’automne plutôt froid à Lille
+                                        ☕️🍂🍁🍂</a>
+                                </div>
+                                <div style=" background-image: url(assets/images/SesamPhotos/sandwish/MIX_SHAWARMA_ARABIC_PLATE_DOUBLE.jpg);"
+                                    class="card-img-top img_bg" alt="..."></div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="all row" id="second_item" style="display: none;">
-                    <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
-                        <div class="card">
-                            <div class="button">
-                                <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un thé
-                                    parfait pour se réchauffer en ce début d’automne plutôt froid à Lille ☕️🍂🍁🍂</a>
+                <div class="tab-pane" id="sucreries">
+                    <div class="all row">
+                        <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                            <div class="card">
+                                <div class="button">
+                                    <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un
+                                        thé
+                                        parfait pour se réchauffer en ce début d’automne plutôt froid à Lille
+                                        ☕️🍂🍁🍂</a>
+                                </div>
+                                <div style=" background-image: url(assets/images/SesamPhotos/sucreries/04.jpeg);"
+                                    class="card-img-top img_bg" alt="..."></div>
                             </div>
-                            <div style=" background-image: url(assets/images/WhatsApp\ Image\ 2023-07-27\ at\ 2.01.10\ PM.jpeg );"
-                                class="card-img-top img_bg" alt="..."></div>
+                        </div>
+                        <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                            <div class="card">
+                                <div class="button">
+                                    <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un
+                                        thé
+                                        parfait pour se réchauffer en ce début d’automne plutôt froid à Lille
+                                        ☕️🍂🍁🍂</a>
+                                </div>
+                                <div style=" background-image: url(assets/images/SesamPhotos/sucreries/58ee0ed71299538921f5106a9bfa9e6fa751dee9.jpg);"
+                                    class="card-img-top img_bg" alt="..."></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                            <div class="card">
+                                <div class="button">
+                                    <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un
+                                        thé
+                                        parfait pour se réchauffer en ce début d’automne plutôt froid à Lille
+                                        ☕️🍂🍁🍂</a>
+                                </div>
+                                <div style=" background-image: url(assets/images/SesamPhotos/sucreries/7a9b8c6a-cc8c-4e2f-bcb8-0292a488003e.jpg);"
+                                    class="card-img-top img_bg" alt="..."></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                            <div class="card">
+                                <div class="button">
+                                    <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un
+                                        thé
+                                        parfait pour se réchauffer en ce début d’automne plutôt froid à Lille
+                                        ☕️🍂🍁🍂</a>
+                                </div>
+                                <div style=" background-image: url(assets/images/SesamPhotos/sucreries/Dessert\ van\ de\ dag.jpg);"
+                                    class="card-img-top img_bg" alt="..."></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                            <div class="card">
+                                <div class="button">
+                                    <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un
+                                        thé
+                                        parfait pour se réchauffer en ce début d’automne plutôt froid à Lille
+                                        ☕️🍂🍁🍂</a>
+                                </div>
+                                <div style=" background-image: url(assets/images/SesamPhotos/sucreries/Dessert\ van\ de\ dag\ 2.jpg);"
+                                    class="card-img-top img_bg" alt="..."></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                            <div class="card">
+                                <div class="button">
+                                    <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un
+                                        thé
+                                        parfait pour se réchauffer en ce début d’automne plutôt froid à Lille
+                                        ☕️🍂🍁🍂</a>
+                                </div>
+                                <div style=" background-image: url(assets/images/SesamPhotos/sucreries/lebanese-nights-dessert-6.jpg);"
+                                    class="card-img-top img_bg" alt="..."></div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
-                        <div class="card" data-work="Application">
-                            <div class="button">
-                                <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un thé
-                                    parfait pour se réchauffer en ce début d’automne plutôt froid à Lille ☕️🍂🍁🍂</a>
-                            </div>
-                            <div style=" background-image: url(assets/images/WhatsApp\ Image\ 2023-07-27\ at\ 2.01.10\ PM\ \(1\).jpeg);"
-                                class="card-img-top img_bg" alt="..."></div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
-                        <div class="card" data-work="Application">
-                            <div class="button">
-                                <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un thé
-                                    parfait pour se réchauffer en ce début d’automne plutôt froid à Lille ☕️🍂🍁🍂</a>
-                            </div>
-                            <div style=" background-image: url(assets/images/WhatsApp\ Image\ 2023-07-27\ at\ 2.01.10\ PM\ \(2\).jpeg );"
-                                class="card-img-top img_bg" alt="..."></div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
-                        <div class="card" data-work="Application">
-                            <div class="button">
-                                <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un thé
-                                    parfait pour se réchauffer en ce début d’automne plutôt froid à Lille ☕️🍂🍁🍂</a>
-                            </div>
-                            <div style="  background-image: url(assets/images/WhatsApp\ Image\ 2023-07-27\ at\ 2.01.10\ PM\ \(3\).jpeg );"
-                                class="card-img-top img_bg" alt="..."></div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
-                        <div class="card" data-work="Application">
-                            <div class="button">
-                                <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un thé
-                                    parfait pour se réchauffer en ce début d’automne plutôt froid à Lille ☕️🍂🍁🍂</a>
-                            </div>
-                            <div style=" background-image: url(assets/images/WhatsApp\ Image\ 2023-07-27\ at\ 2.01.10\ PM\ \(4\).jpeg );"
-                                class="card-img-top img_bg" alt="..."></div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
-                        <div class="card" data-work="Application">
-                            <div class="button">
-                                <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un thé
-                                    parfait pour se réchauffer en ce début d’automne plutôt froid à Lille ☕️🍂🍁🍂</a>
-                            </div>
-                            <div style=" background-image: url(assets/images/WhatsApp\ Image\ 2023-07-27\ at\ 2.01.21\ PM\ \(2\).jpeg );"
-                                class="card-img-top img_bg" alt="..."></div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
-                        <div class="card" data-work="Application">
-                            <div class="button">
-                                <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un thé
-                                    parfait pour se réchauffer en ce début d’automne plutôt froid à Lille ☕️🍂🍁🍂</a>
-                            </div>
-                            <div style=" background-image: url(assets/images/WhatsApp\ Image\ 2023-07-27\ at\ 2.01.21\ PM\ \(2\).jpeg );"
-                                class="card-img-top img_bg" alt="..."></div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
-                        <div class="card" data-work="Application">
-                            <div class="button">
-                                <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un thé
-                                    parfait pour se réchauffer en ce début d’automne plutôt froid à Lille ☕️🍂🍁🍂</a>
-                            </div>
-                            <div style=" background-image: url(assets/images/WhatsApp\ Image\ 2023-07-27\ at\ 2.01.21\ PM\ \(3\).jpeg );"
-                                class="card-img-top img_bg" alt="..."></div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
-                        <div class="card" data-work="Application">
-                            <div class="button">
-                                <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un thé
-                                    parfait pour se réchauffer en ce début d’automne plutôt froid à Lille ☕️🍂🍁🍂</a>
-                            </div>
-                            <div style=" background-image: url(assets/images/WhatsApp\ Image\ 2023-07-27\ at\ 2.01.44\ PM.jpeg );"
-                                class="card-img-top img_bg" alt="..."></div>
-                        </div>
-                    </div>
                 </div>
+                <div class="tab-pane" id="PENSIONS">
+                    <div class="all row">
+                        <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                            <div class="card">
+                                <div class="button">
+                                    <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un
+                                        thé
+                                        parfait pour se réchauffer en ce début d’automne plutôt froid à Lille
+                                        ☕️🍂🍁🍂</a>
+                                </div>
+                                <div style=" background-image: url(assets/images/SesamPhotos/PENSIONS/1.jpg);"
+                                    class="card-img-top img_bg" alt="..."></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                            <div class="card">
+                                <div class="button">
+                                    <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un
+                                        thé
+                                        parfait pour se réchauffer en ce début d’automne plutôt froid à Lille
+                                        ☕️🍂🍁🍂</a>
+                                </div>
+                                <div style=" background-image: url(assets/images/SesamPhotos/PENSIONS/AdobeStock_335948859_Preview.jpeg);"
+                                    class="card-img-top img_bg" alt="..."></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                            <div class="card">
+                                <div class="button">
+                                    <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un
+                                        thé
+                                        parfait pour se réchauffer en ce début d’automne plutôt froid à Lille
+                                        ☕️🍂🍁🍂</a>
+                                </div>
+                                <div style=" background-image: url(assets/images/SesamPhotos/PENSIONS/Arayes.png);"
+                                    class="card-img-top img_bg" alt="..."></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                            <div class="card">
+                                <div class="button">
+                                    <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un
+                                        thé
+                                        parfait pour se réchauffer en ce début d’automne plutôt froid à Lille
+                                        ☕️🍂🍁🍂</a>
+                                </div>
+                                <div style=" background-image: url(assets/images/SesamPhotos/PENSIONS/Assiette\ Arayes\ 19.14.04.jpg);"
+                                    class="card-img-top img_bg" alt="..."></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                            <div class="card">
+                                <div class="button">
+                                    <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un
+                                        thé
+                                        parfait pour se réchauffer en ce début d’automne plutôt froid à Lille
+                                        ☕️🍂🍁🍂</a>
+                                </div>
+                                <div style=" background-image: url(assets/images/SesamPhotos/PENSIONS/Assiette\ kubbeh.jpg);"
+                                    class="card-img-top img_bg" alt="..."></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                            <div class="card">
+                                <div class="button">
+                                    <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un
+                                        thé
+                                        parfait pour se réchauffer en ce début d’automne plutôt froid à Lille
+                                        ☕️🍂🍁🍂</a>
+                                </div>
+                                <div style=" background-image: url(assets/images/SesamPhotos/PENSIONS/Assiette\ Kufta.jpg);"
+                                    class="card-img-top img_bg" alt="..."></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                            <div class="card">
+                                <div class="button">
+                                    <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un
+                                        thé
+                                        parfait pour se réchauffer en ce début d’automne plutôt froid à Lille
+                                        ☕️🍂🍁🍂</a>
+                                </div>
+                                <div style=" background-image: url(assets/images/SesamPhotos/PENSIONS/Assiette\ Musakhan\ 19.14.00.jpg);"
+                                    class="card-img-top img_bg" alt="..."></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                            <div class="card">
+                                <div class="button">
+                                    <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un
+                                        thé
+                                        parfait pour se réchauffer en ce début d’automne plutôt froid à Lille
+                                        ☕️🍂🍁🍂</a>
+                                </div>
+                                <div style=" background-image: url(assets/images/SesamPhotos/PENSIONS/d43482ba158d7cbf6656a7011ddbdba8_w750_h750.jpg);"
+                                    class="card-img-top img_bg" alt="..."></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                            <div class="card">
+                                <div class="button">
+                                    <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un
+                                        thé
+                                        parfait pour se réchauffer en ce début d’automne plutôt froid à Lille
+                                        ☕️🍂🍁🍂</a>
+                                </div>
+                                <div style=" background-image: url(assets/images/SesamPhotos/PENSIONS/Fueil\ de\ vigne\ .jpeg);"
+                                    class="card-img-top img_bg" alt="..."></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                            <div class="card">
+                                <div class="button">
+                                    <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un
+                                        thé
+                                        parfait pour se réchauffer en ce début d’automne plutôt froid à Lille
+                                        ☕️🍂🍁🍂</a>
+                                </div>
+                                <div style=" background-image: url(assets/images/SesamPhotos/PENSIONS/Grillade\ Platter.jpg);"
+                                    class="card-img-top img_bg" alt="..."></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                            <div class="card">
+                                <div class="button">
+                                    <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un
+                                        thé
+                                        parfait pour se réchauffer en ce début d’automne plutôt froid à Lille
+                                        ☕️🍂🍁🍂</a>
+                                </div>
+                                <div style=" background-image: url(assets/images/SesamPhotos/PENSIONS/Screenshot\ 2021-11-19\ at\ 21.30.27.png);"
+                                    class="card-img-top img_bg" alt="..."></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-3 col-md-6 col-sm-12">
+                            <div class="card">
+                                <div class="button">
+                                    <a href="#" class="btn btn-primary ">Profitez d’une petite pause au calme, avec un
+                                        thé
+                                        parfait pour se réchauffer en ce début d’automne plutôt froid à Lille
+                                        ☕️🍂🍁🍂</a>
+                                </div>
+                                <div style=" background-image: url(assets/images/SesamPhotos/PENSIONS/Screenshot\ 2021-11-19\ at\ 21.31.04.png);"
+                                    class="card-img-top img_bg" alt="..."></div>
+                            </div>
+                        </div>
+                    </div>
 
-                <a id="load_more" class="btn m mt-5 "  href="#">Red More</a>
-
+                </div>
             </div>
+
         </div>
     </div>
 
